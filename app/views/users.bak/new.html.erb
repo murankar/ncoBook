@@ -1,4 +1,6 @@
 <% provide(:title, 'Sign Up') %>
+
+<div class="hero-unit">
 <h1>Sign Up</h1>
 <p>THis is a stub page for the user signup page</p>
 
@@ -7,3 +9,4 @@
   <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
 </div>
 <%= render :partial => 'form' %>
+</div>
