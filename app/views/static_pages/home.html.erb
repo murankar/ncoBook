@@ -1,11 +1,25 @@
+<% if signed_in? %>
+
 <div class="center hero-unit">
-  <h1>Welcome to the NCO Leaders Book</h1>
+   <h1>Welcome to your dashboard </h1>
+
+  <h2>
+    This is the home page for the NCO Leaders Book application.
+  </h2>
+
+</div>
+<% else %>
+
+<div class="center hero-unit">
+ <h1>Welcome to the NCO Leaders Book</h1>
 
   <h2>
     This is the home page for the NCO Leaders Book application.
   </h2>
 
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+  
 </div>
+<% end %>
 
 <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
