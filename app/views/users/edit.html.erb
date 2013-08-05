@@ -1,10 +1,6 @@
-<% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<% provide(:title, "Edit user") %> 
 
-
-<%- model_class = User -%>
-
-
+<h1>Update your profile</h1>
 <div class="row">
 	<div class="span6 offset3">
 
@@ -45,11 +41,11 @@
 		</div>
 
 		<div class="form-actions">
-			<%= f.submit "Create my account", :class => 'btn btn-primary' %>
+			<%= f.submit "Update your profile", :class => 'btn btn-primary' %>
 
 		</div>
 		<% end %>
-		
+		<%= gravatar_for @user %>
+		<a href="http://gravatar.com/emails">change</a>
 	</div>
 </div>
-

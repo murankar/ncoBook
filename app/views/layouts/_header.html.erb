@@ -12,7 +12,7 @@
 			<%= drop_down "Account" do %>
 				
         		<%= menu_item "Profile", user_path(current_user) %>
-        		<%= menu_item "Settings", "#" %>
+        		<%= menu_item "Settings", edit_user_path(current_user) %>
         		<%= drop_down_divider %>
         		<%= menu_item "Sign out", signout_path, method: "delete" %>
     		<% end %>
